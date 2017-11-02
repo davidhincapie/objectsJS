@@ -1,14 +1,14 @@
 //Creating an object literal inside the variable 'person'
 //An object literal is like a series of named variables, each with their own value, packaged into a single item -- the object.
 var person = {
-  name: 'David',
+  name: 'Sam',
   country: 'US',
-  age: 30,
+  age: 20,
   student: true,
-  siblings: ['Juan', 'Sabrina', 'Marcela']
+  siblings: ['Bob', 'Tom', 'Joe']
 };
 //to add or change a PROPERTY to the Object
-person.home = 'San Francisco';
+person.home = 'A city';
 //OR person['home'] = 'San Francisco';
 
 function print(message) {
@@ -21,7 +21,7 @@ var message = '<p>Hello. My name is ' + person.name + ' and from the ' + person.
 message += '<p>I am ' + person.age + ' years old</p>';
 message += '<p>I have ' + person.siblings.length + ' siblings. And they are ' + person.siblings.join(', ') + '</p>';
 message += '<p>I live in ' + person.home + '</p>';
-person.home = 'Jackson Hole';
+person.home = 'Another City';
 message += '<p>But I wish I lived in ' + person.home + '</p>';
 
 print(message);
